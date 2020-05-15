@@ -1,6 +1,7 @@
 const readLine =  require("readline-sync")
 const colors =  require("colors")
-
+const  Journal =  require("./models/Journal")
+const  J =  new Journal()
 function menu(){
        current_date  = new Date().toUTCString()
        console.log("Welcome Rigo ".green , current_date  )
@@ -28,7 +29,7 @@ function main(){
 
        switch(counter){
              case  1:
-                 console.log("1")
+                                         
                  break;
             case   2: 
                     console.log("2")
@@ -41,6 +42,10 @@ function main(){
    }while(counter!=4)
 }
 
+function createEntry(){
+     let title =  readLine.question("Enter Title: ")
+     let content =  readLine.question("Write: \n")
+}
 
 main()
 

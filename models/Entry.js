@@ -19,6 +19,14 @@ class Entry{
       getTimeStamp(){
             return   this.timestamp
       }
+
+      getEntry(){
+             let  entry  = 'Title : '.green.italic.bold + this.title + '\n' +
+                            "Content:  ".green + this.content + '\n'  +
+                            'Time Created: '.underline + this.timestamp +'\n'
+
+             return entry;
+      }
     
 }
 
