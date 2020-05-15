@@ -29,10 +29,10 @@ function main(){
 
        switch(counter){
              case  1:
-                                         
+                      createEntry()                   
                  break;
             case   2: 
-                    console.log("2")
+                     J.getEntries()
                     break;
 
             default:
@@ -45,6 +45,7 @@ function main(){
 function createEntry(){
      let title =  readLine.question("Enter Title: ")
      let content =  readLine.question("Write: \n")
+     let newEntry =  J.makeEntry(title,content)
 }
 
 main()
